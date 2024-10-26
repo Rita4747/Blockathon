@@ -6,8 +6,16 @@ https://medium.com/coinmonks/simplest-way-to-connect-your-smart-contracts-to-the
 
 examplers for built web3 games
 https://github.com/zlayine/epic-game-buildspace
+https://base.frensonchain.com/ 
+I WANT TO TRY THIS ONEE
 
 prototypes
 https://www.alchemy.com/list-of/web3-games-on-ethereum
 https://www.galaxiastudios.com/#games-section
 
+building tips: 
+  - actual c code (ctrl-F buildspace)
+https://betterprogramming.pub/create-a-blockchain-game-with-solidity-web3-and-vue-js-c75eed4b49a6
+  - try vue.js - seems like a good option (a lot of tutorials)
+
+https://www.bing.com/videos/riverview/relatedvideo?&q=build+a+web3+games&&mid=B1EA5891FB29C8F3CD29B1EA5891FB29C8F3CD29&mmscn=mtsc&aps=362&FORM=VRDGAR
