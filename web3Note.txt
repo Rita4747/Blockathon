@@ -1,0 +1,13 @@
+some breif ideas for building
+https://blog.thirdweb.com/web3-game-development/
+
+React articles
+https://medium.com/coinmonks/simplest-way-to-connect-your-smart-contracts-to-the-front-end-react-with-web3-js-1e75702ea36a
+
+examplers for built web3 games
+https://github.com/zlayine/epic-game-buildspace
+
+prototypes
+https://www.alchemy.com/list-of/web3-games-on-ethereum
+https://www.galaxiastudios.com/#games-section
+
