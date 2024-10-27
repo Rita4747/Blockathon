@@ -36,10 +36,10 @@
     methods: {
       handleMovement(event) {
         const player = this.$refs.player;
-        const step = 10;
+        const step = 5;
   
-        const top = parseInt(player.style.top) || 50;
-        const left = parseInt(player.style.left) || 50;
+        const top = parseInt(player.style.top) || 95;
+        const left = parseInt(player.style.left) || 40;
   
         switch (event.key) {
           case "ArrowUp":
@@ -113,9 +113,9 @@
     height: 30px;
     background-color: yellow;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 95%;
+    left: 25%;
+    /* transform: translate(-50%, -50%); */
     z-index: 10;
   }
   
