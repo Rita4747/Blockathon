@@ -1,0 +1,7 @@
+{
+  "abi": [
+    // Copy the ABI from your GamePlay.sol contract compilation output
+    // and paste it here. It should be an array of objects describing
+    // the contract's functions and events.
+  ]
+}

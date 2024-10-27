@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --neon-blue: #00ffff;
+  --neon-pink: #ff00ff;
+  --neon-purple: #8a2be2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0e17;
+  color: #ffffff;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #0a0e17, #1a1a2e);
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+}
+
+.start-screen, .wallet-selection, .game-interface {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-screen h1, .wallet-selection h2 {
+  font-size: 4rem;
+  text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink);
+  margin-bottom: 1rem;
+  color: var(--neon-blue);
+}
+
+.start-screen h1 span {
+  color: var(--neon-pink);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: var(--neon-purple);
+  text-shadow: 0 0 5px var(--neon-purple), 0 0 10px var(--neon-purple);
+}
+
+.neon-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--neon-pink);
+  color: var(--neon-pink);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Orbitron', sans-serif;
+  margin: 10px;
+  box-shadow: 0 0 10px var(--neon-pink);
+}
+
+.neon-button:hover {
+  background-color: var(--neon-pink);
+  color: #000000;
+  box-shadow: 0 0 20px var(--neon-pink);
+}
+
+
+
+/* Game interface styles */
+.game-interface {
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.game-info {
+  margin-bottom: 1vw;
+}
+
+.game-info h2 {
+  font-size: 1.5vw;
+  color: var(--neon-blue);
+  margin-bottom: 0.5rem;
+}
+
+.game-info p {
+  font-size: 1rem;
+  color: var(--neon-purple);
+  margin-bottom: 0.5rem;
+}
+
+.complex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5vw;
+  height: 50vh;
+  position: relative;
+}
+
+.room {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--neon-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vw;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+
+.room:hover {
+  box-shadow: 0 0 20px var(--neon-blue);
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
+.room-name {
+  position: relative;
+  z-index: 2;
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+.entry { grid-area: 2 / 2 / 3 / 3; }
+.left { grid-area: 2 / 1 / 3 / 2; }
+.top { grid-area: 1 / 2 / 2 / 3; }
+.right { grid-area: 2 / 3 / 3 / 4; }
+
+.corridor {
+  grid-area: 2 / 1 / 3 / 4;
+  background-color: rgba(0, 255, 255, 0.1);
+  border: 2px solid var(--neon-blue);
+  box-shadow: 0 0 15px var(--neon-blue);
+}
+
+.challenge-center {
+  background-color: rgba(26, 26, 46, 0.7);
+  border: 1px solid var(--neon-pink);
+  padding: 1vw;
+  border-radius: 5px;
+  box-shadow: 0 0 10px var(--neon-pink);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.challenge-center h2 {
+  font-size: 1.5rem;
+  color: var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+  margin-bottom: 1rem;
+}
+
+.challenge-center p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-screen h1, .wallet-selection h2 {
+    font-size: 3rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .game-info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .room {
+    font-size: 0.7rem;
+  }
+}
