@@ -1,11 +1,13 @@
+import generateZKProof from "../ZKPFol/proofGen";
+
 // scripts/interact.js
 async function main() {
     const [deployer] = await ethers.getSigners();
-    const ZKSudoku = await ethers.getContractFactory("ZKSudoku");
-    const zkSudoku = await ZKSudoku.attach("YOUR_CONTRACT_ADDRESS");
+    const ZKProof = await ethers.getContractFactory("ZKSudoku");
+    const zkProof = await generateZKProof.attach("YOUR_CONTRACT_ADDRESS");
 
     // Start game
-    await zkSudoku.connect(deployer).startGame();
+    await zkProof.connect(deployer).startGame();
     console.log("Game started");
 
     // Verify solution (placeholder)
@@ -13,7 +15,7 @@ async function main() {
     const b = [[0, 0], [0, 0]];
     const c = [0, 0];
     const input = [0];
-    const result = await zkSudoku.connect(deployer).verifySolution(a, b, c, input);
+    const result = await zkProof.connect(deployer).verifySolution(a, b, c, input);
     console.log("Solution verification result:", result);
 }
 

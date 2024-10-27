@@ -6,7 +6,7 @@ contract ZKProof {
         uint8[9][9] grid;
     }
 
-    mapping(address => Sudoku) public puzzles;
+    mapping(address => Sudoku) private puzzles;
     //Verifier public zkVerifier;
     // constructor(address _zkVerifier) {
     //     zkVerifier = Verifier(_zkVerifier);

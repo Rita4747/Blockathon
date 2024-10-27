@@ -1,4 +1,4 @@
-// proofGeneration.js
+// proofGen.js
 
 import { groth16 } from "snarkjs";
 
