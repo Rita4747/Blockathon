@@ -11,7 +11,7 @@ async function main() {
     const ZKSoduku = await ethers.getContractFactory("ZKSudoku");
     const zkSudoku = await ZKSoduku.deploy();
     await zkSoduku.deployed();
-    console.zkSudoku("GameLogic deployed to:", gameLogic.address);
+    console.zkSudoku("zksudoku deployed to:", zkSodoku.address);
 }
 
 // Run the main function, catch errors and set process exit code to 1

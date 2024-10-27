@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.27;
 import "hardhat/console.sol";
@@ -89,3 +90,14 @@ contract MazeGame {
     
 
 }
+=======
+contract Escape is ERC721 {
+
+    struct CharacterAtt {
+        string name;
+        string imageURI;
+        uint256 hp;
+        uint256 maxHp;
+        uint256 keysCollected;
+    }
+>>>>>>> 0c2dac4b659e3810d025ae0b106f40d7bc312555
